@@ -1,0 +1,18 @@
+<h1>Por País</h1>
+<hr />
+<div class="row">
+  <div class="col">
+    <shared-search-box (onSearch)="searchByName($event)"></shared-search-box>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <!-- <ul>
+      <li *ngFor="let country of countries">
+        {{ country.capital }} - {{ country.area }}
+      </li>
+    </ul> -->
+    <countries-table [countries]="countries"></countries-table>
+  </div>
+</div>
+
